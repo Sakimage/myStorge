@@ -1,0 +1,18 @@
+<configuration>
+  <property>
+   <!-- The name of the default file system. A URI whose scheme and authority determine the FileSystem implementation. The uri's scheme determines the config property (fs.SCHEME.impl) naming the FileSystem implementation class. The uri's authority is used to determine the host, port, etc. for a filesystem.-->
+    <name>fs.defaultFS</name>
+    <value>hdfs://192.168.21.112:9000</value>
+  </property>
+  <property>
+    <!--Size of read/write buffer used in SequenceFiles. byte -->
+    <name>io.file.buffer.size</name>
+  <value>131072</value>
+  </property>
+<property>
+<!-- A base for other temporary directories. -->
+<name>hadoop.tmp.dir</name>
+    <value>/home/zc/lyd/hadoop-2.7.7/tmp</value>
+  </property>
+
+</configuration>
